@@ -21,7 +21,7 @@ if uploaded_file is not None:
         st.error("Expected 1022 fingerprint bits (Bit_0 to Bit_1021).")
     else:
         X = df[bit_columns].values
-        predictions = model.predict(X)
+        predictions = rf_model.predict(X)
         df["Predicted_pIC50"] = predictions
 
         st.success("Prediction complete!")
