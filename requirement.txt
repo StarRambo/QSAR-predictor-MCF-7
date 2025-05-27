@@ -1,4 +1,0 @@
-streamlit
-rdkit-pypi
-scikit-learn
-numpy
