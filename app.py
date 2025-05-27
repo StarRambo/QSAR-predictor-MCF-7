@@ -7,7 +7,7 @@ st.title("QSAR Model: pIC50 Predictor (No RDKit Version)")
 
 # Load trained model
 with open("rf_model.pkl", "rb") as f:
-    model = pickle.load(f)
+    rf_model = pickle.load(f)
 
 # Upload fingerprint CSV
 uploaded_file = st.file_uploader("Upload CSV with precomputed ECFP4 (1022-bit) fingerprints", type=["csv"])
